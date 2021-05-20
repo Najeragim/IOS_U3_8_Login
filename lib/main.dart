@@ -112,7 +112,7 @@ class _LoginScreenState extends State<LoginScreen> {
                       children: <Widget>[
                         TextButton(
                           style: ButtonStyle(
-                            backgroundColor: Colors.grey[300],
+                            backgroundColor: Colors.white,
                           ),
                           child: Text(
                             'Cancelar',
@@ -144,7 +144,24 @@ class _LoginScreenState extends State<LoginScreen> {
                 ],//Niños
               ),//Columna
             //If verdadero
-            
+            else
+              Center(
+                child: Column(
+                  children: <Widget>[
+                    Text('YUPIII! He entrado:)'),
+                    ElevatedButton(
+                      elevation: 20.0,
+                      child: Text('Cerrar Sesión'),
+                      onPressed: () {
+                        setState(() {
+                          isLogin = false;
+                        });
+                      },
+                    )
+                  ],
+                ),
+              )
+            //If Falso
           ],//Hijos
         ),//ListView
       ),//Body: SafeArea
