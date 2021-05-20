@@ -113,6 +113,7 @@ class _LoginScreenState extends State<LoginScreen> {
                         TextButton(
                           style: TextButton.styleFrom(
                             backgroundColor: Colors.grey[200],
+                            padding: 8,
                           ),
                           child: Text(
                             'Cancelar',
@@ -128,6 +129,7 @@ class _LoginScreenState extends State<LoginScreen> {
                         ElevatedButton(
                           style: ButtonStyle(
                             backgroundColor: MaterialStateProperty.all(Colors.purple),
+                            padding: 8,
                           ),
                           child: Text(
                             'Ingresar',
