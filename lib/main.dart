@@ -111,6 +111,9 @@ class _LoginScreenState extends State<LoginScreen> {
                       mainAxisAlignment: MainAxisAlignment.end,
                       children: <Widget>[
                         TextButton(
+                          style: TextButton.styleFrom(
+                            backgroundColor: Colors.grey[200],
+                          ),
                           child: Text(
                             'Cancelar',
                             style: TextStyle(color: Colors.purple),
@@ -123,7 +126,7 @@ class _LoginScreenState extends State<LoginScreen> {
                         ),
                         ElevatedButton(
                           style: ButtonStyle(
-                            backgroundColor: Colors.purple,
+                            backgroundColor: MaterialStateProperty.all(Colors.purple),
                           ),
                           child: Text(
                             'Ingresar',
