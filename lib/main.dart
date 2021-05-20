@@ -124,13 +124,14 @@ class _LoginScreenState extends State<LoginScreen> {
                             });
                           },
                         ),
+                        SizedBox(width: 16),
                         ElevatedButton(
                           style: ButtonStyle(
                             backgroundColor: MaterialStateProperty.all(Colors.purple),
                           ),
                           child: Text(
                             'Ingresar',
-                            style: TextStyle(color: Colors.purple),
+                            style: TextStyle(color: Colors.white),
                           ),
                           onPressed: () {
                             setState(() {
