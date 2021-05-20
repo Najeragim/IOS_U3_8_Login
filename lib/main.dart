@@ -91,7 +91,6 @@ class _LoginScreenState extends State<LoginScreen> {
                   TextField(
                     decoration: InputDecoration(
                       border: OutlineInputBorder(),
-                      enabledBorder:
                       labelText: 'Nombre de usuario',
                     ),
                   ),
