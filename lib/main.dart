@@ -156,9 +156,13 @@ class _LoginScreenState extends State<LoginScreen> {
                 child: Column(
                   children: <Widget>[
                     Text('YUPIII! He entrado:)'),
+                    SizedBox(height: 16,),
                     ElevatedButton(
                       //elevation: 20.0,
-                      child: Text('Cerrar Sesión'),
+                      child: Padding(
+                        padding: EdgeInsets.all(8.0),
+                        child: Text('Cerrar Sesión'),
+                      ),
                       onPressed: () {
                         setState(() {
                           acceso = false;
