@@ -84,8 +84,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   child: Image.network(
                     'https://raw.githubusercontent.com/Najeragim/imagenes/main/my-logo.png',
                   ),
-                )
-                
+                ),
                 SizedBox(height: 16.0),
               ],//Hijos de Columna
             ),//Columna
