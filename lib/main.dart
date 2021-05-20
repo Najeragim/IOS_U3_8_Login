@@ -80,11 +80,7 @@ class _LoginScreenState extends State<LoginScreen> {
               children: <Widget>[
                 Image.network(
                   'https://raw.githubusercontent.com/Najeragim/imagenes/main/my-logo.png',
-                  loadingBuilder: (context, child, progress){
-                    return progress == null,
-                      ? child
-                      :LinearProgressIndicator();
-                  }
+                  scale: 0.2,
                 ),
                 SizedBox(height: 16.0),
               ],//Hijos de Columna
