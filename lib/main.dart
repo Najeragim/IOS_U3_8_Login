@@ -113,12 +113,14 @@ class _LoginScreenState extends State<LoginScreen> {
                         TextButton(
                           style: TextButton.styleFrom(
                             backgroundColor: Colors.grey[200],
+                          ),
+                          child: Padding(
                             padding: EdgeInsets.all(8.0),
-                          ),
-                          child: Text(
-                            'Cancelar',
-                            style: TextStyle(color: Colors.purple),
-                          ),
+                            child: Text(
+                              'Cancelar',
+                              style: TextStyle(color: Colors.purple),
+                            ),
+                          ), 
                           onPressed: () {
                             setState(() {
                               acceso = false;
