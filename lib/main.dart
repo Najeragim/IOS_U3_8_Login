@@ -129,11 +129,13 @@ class _LoginScreenState extends State<LoginScreen> {
                         ElevatedButton(
                           style: ButtonStyle(
                             backgroundColor: MaterialStateProperty.all(Colors.purple),
-                            padding: MaterialStateProperty(EdgeInsets.all(8.0)),
                           ),
-                          child: Text(
-                            'Ingresar',
-                            style: TextStyle(color: Colors.white),
+                          child: Padding(
+                            padding: EdgeInsets.all(8.0),
+                            child: Text(
+                              'Ingresar',
+                              style: TextStyle(color: Colors.white),
+                            ),
                           ),
                           onPressed: () {
                             setState(() {
