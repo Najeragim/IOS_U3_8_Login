@@ -105,6 +105,38 @@ class _LoginScreenState extends State<LoginScreen> {
                     ),
                     obscureText: true,
                   ),
+                  Padding(
+                    padding: const EdgeInsets.only(top: 18.0),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.end,
+                      children: <Widget>[
+                        OutlinedButton(
+                          borderSide: BorderSide(color: Colors.purple),
+                          child: Text(
+                            'Cancelar',
+                            style: TextStyle(color: Colors.purple),
+                          ),
+                          onPressed: () {
+                            setState(() {
+                              acceso = false;
+                            });
+                          },
+                        ),
+                        OutlinedButton(
+                          borderSide: BorderSide(color: Colors.purple),
+                          child: Text(
+                            'Ingresar',
+                            style: TextStyle(color: Colors.purple),
+                          ),
+                          onPressed: () {
+                            setState(() {
+                              acceso = true;
+                            });
+                          },
+                        ),
+                      ],
+                    ),
+                  )//Padding
                 ],//Niños
               ),//Columna
             //If verdadero
