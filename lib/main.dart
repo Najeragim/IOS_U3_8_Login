@@ -156,7 +156,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 child: Column(
                   children: <Widget>[
                     Text('YUPIII! He entrado:)'),
-                    SizedBox(height: 16,),
+                    SizedBox(height: 8,),
                     ElevatedButton(
                       //elevation: 20.0,
                       child: Padding(
