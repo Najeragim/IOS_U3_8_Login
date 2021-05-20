@@ -80,6 +80,8 @@ class _LoginScreenState extends State<LoginScreen> {
               children: <Widget>[
                 Image.network(
                   'https://raw.githubusercontent.com/Najeragim/imagenes/main/my-logo.png',
+                  width: 100.0,
+                  heigth: 100.0,
                 ),
                 SizedBox(height: 16.0),
               ],
