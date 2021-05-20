@@ -85,7 +85,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 SizedBox(height: 16.0),
               ],//Hijos de Columna
             ),//Columna
-            if(acceso == false){
+            if(!acceso)
               Column(
                 children: <Widget>[
                   TextField(
@@ -96,7 +96,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   ),
                 ],//Niños
               ),//Columna
-            }//If verdadero
+            //If verdadero
           ],//Hijos
         ),//ListView
       ),//Body: SafeArea
