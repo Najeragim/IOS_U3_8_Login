@@ -110,8 +110,10 @@ class _LoginScreenState extends State<LoginScreen> {
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.end,
                       children: <Widget>[
-                        OutlinedButton(
-                          borderSide: BorderSide(color: Colors.purple),
+                        TextButton(
+                          style: ButtonStyle(
+                            backgroundColor: Colors.grey[300],
+                          ),
                           child: Text(
                             'Cancelar',
                             style: TextStyle(color: Colors.purple),
@@ -122,8 +124,10 @@ class _LoginScreenState extends State<LoginScreen> {
                             });
                           },
                         ),
-                        OutlinedButton(
-                          borderSide: BorderSide(color: Colors.purple),
+                        ElevatedButton(
+                          style: ButtonStyle(
+                            backgroundColor: Colors.purple,
+                          ),
                           child: Text(
                             'Ingresar',
                             style: TextStyle(color: Colors.purple),
@@ -140,6 +144,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 ],//Niños
               ),//Columna
             //If verdadero
+            
           ],//Hijos
         ),//ListView
       ),//Body: SafeArea
