@@ -85,7 +85,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 SizedBox(height: 16.0),
               ],//Hijos de Columna
             ),//Columna
-            if(!acceso){
+            if(acceso == false){
               Column(
                 children: <Widget>[
                   TextField(
