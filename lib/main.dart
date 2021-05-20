@@ -78,15 +78,20 @@ class _LoginScreenState extends State<LoginScreen> {
             SizedBox(height: 80.0),
             Column(
               children: <Widget>[
-                Image(
-                  image: NetworkImage('https://raw.githubusercontent.com/Najeragim/imagenes/main/my-logo.png'),
-                  width: 100.0,
-                  heigth: 100.0,
+                Image.network(
+                  'https://raw.githubusercontent.com/Najeragim/imagenes/main/my-logo.png',
+                  loadingBuilder: (context, child, progress){
+                    return progress == null,
+                      ? child
+                      :LinearProgressIndicator();
+                  }
                 ),
                 SizedBox(height: 16.0),
-              ],
-            ),
-            
+              ],//Hijos de Columna
+            ),//Columna
+            if(!isLogin){
+              
+            }
           ],//Hijos
         ),//ListView
       ),//Body: SafeArea
