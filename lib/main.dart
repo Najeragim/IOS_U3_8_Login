@@ -142,7 +142,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     ),
                   )//Padding
                 ],//Niños
-              ),//Columna
+              )//Columna
             //If verdadero
             else
               Center(
