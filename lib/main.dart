@@ -29,7 +29,7 @@ class LoginScreen extends StatefulWidget {
 }
 
 class _LoginScreenState extends State<LoginScreen> {
-  bool isLogin = false;
+  bool acceso = false;
   @override
   void initState() {
     super.initState();
@@ -85,9 +85,19 @@ class _LoginScreenState extends State<LoginScreen> {
                 SizedBox(height: 16.0),
               ],//Hijos de Columna
             ),//Columna
-            if(!isLogin){
-              
-            }
+            if(!acceso){
+              Column(
+                children: <Widget>[
+                  TextField(
+                    decoration: InputDecoration(
+                      border: OutlineInputBorder(),
+                      enabledBorder:
+                      labelText: 'Nombre de usuario',
+                    ),
+                  ),
+                ],//Niños
+              ),//Columna
+            }//If verdadero
           ],//Hijos
         ),//ListView
       ),//Body: SafeArea
