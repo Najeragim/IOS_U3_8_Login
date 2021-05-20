@@ -79,7 +79,7 @@ class _LoginScreenState extends State<LoginScreen> {
             Column(
               children: <Widget>[
                 Container(
-                  heigth: 200.0,
+                  height: 200.0,
                   width:200.0,
                   child: Image.network(
                     'https://raw.githubusercontent.com/Najeragim/imagenes/main/my-logo.png',
