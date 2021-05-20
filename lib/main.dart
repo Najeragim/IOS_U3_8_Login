@@ -111,9 +111,6 @@ class _LoginScreenState extends State<LoginScreen> {
                       mainAxisAlignment: MainAxisAlignment.end,
                       children: <Widget>[
                         TextButton(
-                          style: ButtonStyle(
-                            backgroundColor: Colors.white,
-                          ),
                           child: Text(
                             'Cancelar',
                             style: TextStyle(color: Colors.purple),
@@ -154,7 +151,7 @@ class _LoginScreenState extends State<LoginScreen> {
                       child: Text('Cerrar Sesión'),
                       onPressed: () {
                         setState(() {
-                          isLogin = false;
+                          acceso = false;
                         });
                       },
                     )
