@@ -78,10 +78,14 @@ class _LoginScreenState extends State<LoginScreen> {
             SizedBox(height: 80.0),
             Column(
               children: <Widget>[
-                Image.network(
-                  'https://raw.githubusercontent.com/Najeragim/imagenes/main/my-logo.png',
-                  scale: 0.2,
-                ),
+                Container(
+                  heigth: 200.0,
+                  width:200.0,
+                  child: Image.network(
+                    'https://raw.githubusercontent.com/Najeragim/imagenes/main/my-logo.png',
+                  ),
+                )
+                
                 SizedBox(height: 16.0),
               ],//Hijos de Columna
             ),//Columna
@@ -93,6 +97,14 @@ class _LoginScreenState extends State<LoginScreen> {
                       border: OutlineInputBorder(),
                       labelText: 'Nombre de usuario',
                     ),
+                  ),
+                  SizedBox(height: 12.0),
+                  TextField(
+                    decoration: InputDecoration(
+                      border: OutlineInputBorder(),
+                      labelText: 'Contraseña',
+                    ),
+                    obscureText: true,
                   ),
                 ],//Niños
               ),//Columna
